@@ -161,6 +161,10 @@ input:checked + .slider:before {
   .header-title {
     padding: 1em;
   }
+
+  .switch-mode {
+    padding-right: 10.5em;
+  }
 }
 
 @media (min-width: 700px) {
