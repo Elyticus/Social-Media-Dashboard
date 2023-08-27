@@ -1,6 +1,8 @@
 body {
   background-color: #20222f;
   font-family: "Inter", sans-serif;
+
+  overflow-x: hidden;
 }
 
 .container {
@@ -97,8 +99,8 @@ h2 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
 }
 
 .slider {
@@ -116,17 +118,17 @@ h2 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #212b43;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-image: linear-gradient(50deg, #4698b8, #3ec09f);
 }
 
 input:checked + .slider:before {
@@ -148,7 +150,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10em;
+  padding-right: 7em;
 }
 
 @media (max-width: 700px) {
