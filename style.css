@@ -154,6 +154,10 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container {
     padding: 1em;
   }
