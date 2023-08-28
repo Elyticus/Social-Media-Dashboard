@@ -1,5 +1,14 @@
 import { socialMediaData } from "./data.js";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const switchButton = document.getElementById("switch-btn");
+
+  switchButton.addEventListener("click", () => {
+    document.querySelector("body").classList.toggle("white-mode");
+    document.querySelector(".cards").classList.toggle("white-cards");
+  });
+});
+
 function setTitleHtml() {
   let titleHtml = "";
 
@@ -12,8 +21,8 @@ function setTitleHtml() {
         <div class="switch-mode">
           <p class="mode">Dark Mode</p>
           <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider round"></span>
+          <input  type="checkbox" checked>
+          <span id="switch-btn" class="slider round"></span>
           </label>
         </div>
     </div>
@@ -29,7 +38,7 @@ function setFeedHtml() {
     mediaHTML += `
     
 
-    <div class="cards">
+    <div class="cards white-cards">
     <div class="flex-group">
       <img src="images/icon-facebook.svg" />
         <p class="social-name">
