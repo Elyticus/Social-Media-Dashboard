@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const statsStyle = document.getElementsByClassName("stats-style");
     for (const stats of statsStyle) {
-      stats.classList.toggle("white-cards");
+      stats.classList.toggle("black");
     }
   });
 });

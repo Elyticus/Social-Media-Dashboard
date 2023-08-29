@@ -197,12 +197,6 @@ input:checked + .slider:before {
   align-items: center;
 }
 
-.white-cards {
-  cursor: pointer;
-  background-color: var(--Very-Pale-Blue);
-  color: black;
-}
-
 .white-title {
   color: #1f1f28;
 }
@@ -362,6 +356,16 @@ input:checked + .slider:before {
 
 .white-cards:hover {
   background-color: var(--Light-Grayish-Blue);
+}
+
+.white-cards {
+  cursor: pointer;
+  background-color: var(--Very-Pale-Blue);
+  color: black;
+}
+
+.black {
+  color: black;
 }
 
 @media (max-width: 700px) {
