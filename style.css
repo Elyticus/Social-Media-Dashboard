@@ -355,7 +355,7 @@ input:checked + .slider:before {
 }
 
 .white-cards:hover {
-  background-color: var(--Light-Grayish-Blue);
+  background-color: hsl(229, 40%, 92%);
 }
 
 .white-cards {
